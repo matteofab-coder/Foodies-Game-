@@ -365,7 +365,7 @@ sceneGroup:insert(sfondoStella4)
 
 local stellina1 = display.newImageRect("immagini/stellina.png", 50,50)
 stellina1.x = display.contentCenterX - 50
-stellina1.y = -150                                                             --stelle premio che vengono ottenute in base alla percentuale
+stellina1.y = -150                                    --stelle premio che vengono ottenute in base alla percentuale
 sceneGroup:insert(stellina1)
 
 
@@ -428,17 +428,13 @@ local function prizeMoney()        --funzione che assegna il premio in base alla
 
      transition.to(prizeInterface, {time = 1000, x = display.contentCenterX, y = display.contentCenterY,
                                      rotation = 360})
-
      transition.to(sfondoStella, {x = display.contentCenterX -95, y = display.contentCenterY -60,
                                       rotation = 360, 
                                       time = 500, delay = 1100})
-
      transition.to(sfondoStella2, {x = display.contentCenterX - 35, y = display.contentCenterY - 100,                 -- transizioni animazione alla fine del livello prima delle stelle premio
                                       rotation = 360, time = 500, delay = 1100})
-
      transition.to(sfondoStella3, {x = display.contentCenterX + 35, y = display.contentCenterY - 100,
                                       rotation = 360, time = 500, delay = 1100})
-
      transition.to(sfondoStella4, {x = display.contentCenterX + 95, y = display.contentCenterY -60,
                                       rotation = 360, time = 500, delay = 1100})
 
@@ -616,7 +612,7 @@ chooseCorrectFood()
 end
 
 
-
+-- RIMOZIONE SCENE (ROTTO PER COMPOSER SMINCHIATO)
 
 
 function scene:destroy(event)           -- funzione destroy per rimozione oggetti da memoria
